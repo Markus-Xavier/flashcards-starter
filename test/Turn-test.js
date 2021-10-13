@@ -27,7 +27,7 @@ describe('Turn', function() {
     assert.equal(turn.userGuess, 'pug');
   });
 
-  it.skip('should store the card being played', function() {
+  it('should store the card being played', function() {
     assert.deepEqual(turn.currentCard, card);
   });
 
