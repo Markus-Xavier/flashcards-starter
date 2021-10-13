@@ -25,14 +25,16 @@ describe('Turn', function() {
 
   it('should store the users guess', function() {
     assert.equal(turn.userGuess, 'pug');
+    assert.equal(turn2.userGuess, 'sea otter');
   });
 
   it('should store the card being played', function() {
     assert.deepEqual(turn.currentCard, card);
   });
 
-  it.skip('should return the users guess', function() {
+  it('should return the users guess', function() {
     assert.equal(turn.returnGuess(), 'pug');
+    assert.equal(turn2.returnGuess(), 'sea otter');
   });
 
   it.skip('should return the card being played', function() {
