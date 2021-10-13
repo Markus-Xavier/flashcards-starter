@@ -27,31 +27,31 @@ describe('Turn', function() {
     assert.equal(turn.userGuess, 'pug');
   });
 
-  it('should store the card being played', function() {
+  it.skip('should store the card being played', function() {
     assert.deepEqual(turn.currentCard, card);
   });
 
-  it('should return the users guess', function() {
+  it.skip('should return the users guess', function() {
     assert.equal(turn.returnGuess(), 'pug');
   });
 
-  it('should return the card being played', function() {
+  it.skip('should return the card being played', function() {
     assert.equal(turn.returnCard(), card);
   });
 
-  it('should return if the users guess matches the correct answer', function() {
+  it.skip('should return if the users guess matches the correct answer', function() {
     assert.equal(turn.evaluateGuess(), true);
   });
 
-  it('should return if the users guess does not match the correct answer', function() {
+  it.skip('should return if the users guess does not match the correct answer', function() {
     assert.equal(turn2.evaluateGuess(), false);
   });
 
-  it('should return the string correct if the guess matches the correct answer', function() {
+  it.skip('should return the string correct if the guess matches the correct answer', function() {
     assert.equal(turn.giveFeedback(), 'correct!');
   });
 
-  it('should return the string incorrect if the guess does not match the correct answer', function() {
+  it.skip('should return the string incorrect if the guess does not match the correct answer', function() {
     assert.equal(turn2.giveFeedback(), 'incorrect!');
   });
 
