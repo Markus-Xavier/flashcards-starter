@@ -13,7 +13,7 @@ describe('Card', function() {
     const card = new Card();
     assert.instanceOf(card, Card);
   });
-  
+
   it('should store an id', function() {
     const card = new Card(1, 'What allows you to define a set of related information using key-value pairs?', ['object', 'array', 'function'], 'object');
     assert.equal(card.id, 1);
