@@ -76,6 +76,12 @@ describe('Round', function() {
     assert.equal(round.takeTurn('pug'), 'incorrect!');
   });
 
+  it('should continue to provide feedback after take turn', function() {
+    assert.equal(round.takeTurn('sea otter'), 'correct!');
+    assert.equal(round.takeTurn('gallbladder'), 'correct!');
+    assert.equal(round.takeTurn('Lex'), 'incorrect!');
+  });
+
   it.skip('should calculate the percentage of correct guesses', function() {
     round.takeTurn('sea otter');
     round.takeTurn('spleen');
