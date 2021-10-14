@@ -36,7 +36,7 @@ describe('Round', function() {
     assert.deepEqual(round.currentCard, card1);
   });
 
-  it.skip('should keep track of the number of turns which should start at 0', function() {
+  it('should keep track of the number of turns which should start at 0', function() {
     assert.equal(round.turns, 0);
   });
 
