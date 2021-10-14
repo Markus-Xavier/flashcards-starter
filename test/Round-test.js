@@ -58,12 +58,12 @@ describe('Round', function() {
     assert.deepEqual(round.currentCard, card3);
   });
 
-  it.skip('should store the cards id if the guess is incorrect', function() {
+  it('should store the cards id if the guess is incorrect', function() {
     round.takeTurn('pug');
     assert.deepEqual(round.incorrectGuesses, [1]);
   });
 
-  it.skip('should not store the cards id if the user guesses correct', function() {
+  it('should not store the cards id if the user guesses correct', function() {
     round.takeTurn('sea otter');
     assert.deepEqual(round.incorrectGuesses, []);
   });
