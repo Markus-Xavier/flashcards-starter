@@ -29,7 +29,7 @@ beforeEach(function() {
     assert.deepEqual(deck.cards, [card1, card2, card3]);
   });
 
-  it.skip('should count how many cards it has', function() {
+  it('should count how many cards it has', function() {
     assert.equal(deck.countCards(), 3);
   });
 });
