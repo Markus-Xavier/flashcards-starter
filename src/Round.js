@@ -32,6 +32,10 @@ class Round {
     const percentageNumber = Math.floor(earnedPoints / this.currentDeck.countCards() * 100);
     return percentageNumber;
   }
+
+  endRound() {
+    console.log(`** Round over! ** You answered ${this.calculatePercentCorrect()}% of the questions correctly!`);
+  }
 }
 
 module.exports = Round;

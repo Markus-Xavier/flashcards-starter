@@ -86,6 +86,7 @@ describe('Round', function() {
     round.takeTurn('sea otter');
     round.takeTurn('spleen');
     round.takeTurn('Fitzgerald');
+    round.endRound();
     assert.equal(round.calculatePercentCorrect(), 66);
   });
 });
