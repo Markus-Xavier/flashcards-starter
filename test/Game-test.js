@@ -42,7 +42,7 @@ describe('Game', function() {
 
 
 
-  it.skip('should create cards', function() {
+  it('should create cards', function() {
     assert.deepEqual(game.createCards(cardData), [card1, card2, card3]);
   });
 

@@ -1,6 +1,8 @@
 const data = require('./data');
 const prototypeQuestions = data.prototypeData;
 const util = require('./util');
+const card = require('./Card');
+const Card = require('./Card');
 
 class Game {
   constructor() {}
@@ -12,6 +14,14 @@ class Game {
 
   printQuestion(round) {
       util.main(round);
+  }
+
+  createCards(cardData) {
+    return cardData.map(data => new Card(data.id, data.question, data.answers, data.correctAnswer));
+  }
+
+  start() {
+
   }
 }
 
