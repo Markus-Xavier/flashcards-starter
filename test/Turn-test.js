@@ -37,7 +37,7 @@ describe('Turn', function() {
     assert.equal(turn2.returnGuess(), 'sea otter');
   });
 
-  it.skip('should return the card being played', function() {
+  it('should return the card being played', function() {
     assert.equal(turn.returnCard(), card);
   });
 
