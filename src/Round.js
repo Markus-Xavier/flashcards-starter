@@ -26,6 +26,12 @@ class Round {
     }
     return turn.giveFeedback();
   }
+
+  calculatePercentCorrect() {
+    const earnedPoints = this.currentDeck.countCards() - this.incorrectGuesses.length;
+    const percentageNumber = Math.floor(earnedPoints / this.currentDeck.countCards() * 100);
+    return percentageNumber;
+  }
 }
 
 module.exports = Round;

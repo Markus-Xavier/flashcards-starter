@@ -82,7 +82,7 @@ describe('Round', function() {
     assert.equal(round.takeTurn('Lex'), 'incorrect!');
   });
 
-  it.skip('should calculate the percentage of correct guesses', function() {
+  it('should calculate the percentage of correct guesses', function() {
     round.takeTurn('sea otter');
     round.takeTurn('spleen');
     round.takeTurn('Fitzgerald');
