@@ -45,15 +45,15 @@ describe('Turn', function() {
     assert.equal(turn2.evaluateGuess(), true);
   });
 
-  it.skip('should return if the users guess does not match the correct answer', function() {
+  it('should return if the users guess does not match the correct answer', function() {
     assert.equal(turn.evaluateGuess(), false);
   });
 
-  it.skip('should return the string correct if the guess matches the correct answer', function() {
+  it('should return the string correct if the guess matches the correct answer', function() {
     assert.equal(turn2.giveFeedback(), 'correct!');
   });
 
-  it.skip('should return the string incorrect if the guess does not match the correct answer', function() {
+  it('should return the string incorrect if the guess does not match the correct answer', function() {
     assert.equal(turn.giveFeedback(), 'incorrect!');
   });
 });
