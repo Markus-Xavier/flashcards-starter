@@ -44,7 +44,7 @@ describe('Round', function() {
     assert.deepEqual(round.returnCurrentCard(), card1);
   });
 
-  it.skip('should update the turn count', function() {
+  it('should update the turn count', function() {
     round.takeTurn();
     assert.equal(round.turns, 1);    
     round.takeTurn();
