@@ -1,6 +1,6 @@
 class Round {
-  constructor () {
-
+  constructor (currentDeck) {
+    this.currentDeck = currentDeck;
   }
 }
 
