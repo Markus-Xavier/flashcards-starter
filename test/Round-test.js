@@ -68,11 +68,11 @@ describe('Round', function() {
     assert.deepEqual(round.incorrectGuesses, []);
   });
 
-  it.skip('should provide feedback from the turn if the user guesses correctly', function() {
+  it('should provide feedback from the turn if the user guesses correctly', function() {
     assert.equal(round.takeTurn('sea otter'), 'correct!');
   });
 
-  it.skip('should provide feedback from the turn if the user guesses incorrectly', function() {
+  it('should provide feedback from the turn if the user guesses incorrectly', function() {
     assert.equal(round.takeTurn('pug'), 'incorrect!');
   });
 
