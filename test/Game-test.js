@@ -46,12 +46,15 @@ describe('Game', function() {
     assert.deepEqual(game.createCards(cardData), [card1, card2, card3]);
   });
 
-  it.skip('should create a deck', function() {
-    assert.deepEqual(game.createDeck(game.createCards(cardData)), deck);
+  it('should create a deck', function() {
+    const gameCards = game.createCards(cardData);
+    assert.deepEqual(game.createDeck(gameCards), deck);
   });
 
   it.skip('should keep track of the current round', function() {
-    game.setCurrentRound(game.createDeck(game.createCards(cardData)));
+    const gameCards = game.createCards(cardData);
+    const gameDeck = game.createDeck(gameCards);
+    game.setCurrentRound(gameDeck);
     assert.deepEqual(game.currentRound, round);
   });
 });
