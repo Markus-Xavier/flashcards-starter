@@ -51,7 +51,7 @@ describe('Game', function() {
     assert.deepEqual(game.createDeck(gameCards), deck);
   });
 
-  it.skip('should keep track of the current round', function() {
+  it('should keep track of the current round', function() {
     const gameCards = game.createCards(cardData);
     const gameDeck = game.createDeck(gameCards);
     game.setCurrentRound(gameDeck);
