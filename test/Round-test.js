@@ -51,7 +51,7 @@ describe('Round', function() {
     assert.equal(round.turns, 2);
   });
 
-  it.skip('should set the current card to the next card in the deck', function() {
+  it('should set the current card to the next card in the deck', function() {
     round.takeTurn();
     assert.deepEqual(round.currentCard, card2);
     round.takeTurn();

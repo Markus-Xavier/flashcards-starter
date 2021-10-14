@@ -9,8 +9,13 @@ class Round {
     return this.currentDeck.cards[this.turns];
   }
 
+  setNextCard() {
+    this.currentCard = this.currentDeck.cards[this.turns];
+  }
+
   takeTurn() {
     this.turns++;
+    this.setNextCard();
   }
 }
 
