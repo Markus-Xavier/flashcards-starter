@@ -40,7 +40,7 @@ describe('Round', function() {
     assert.equal(round.turns, 0);
   });
 
-  it.skip('should return the current card', function() {
+  it('should return the current card', function() {
     assert.deepEqual(round.returnCurrentCard(), card1);
   });
 
