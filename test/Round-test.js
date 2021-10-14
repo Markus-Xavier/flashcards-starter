@@ -32,7 +32,7 @@ describe('Round', function() {
     assert.deepEqual(round.currentDeck, deck);
   });
 
-  it.skip('should keep track of the current card which should be the first card by default', function() {
+  it('should keep track of the current card which should be the first card by default', function() {
     assert.deepEqual(round.currentCard, card1);
   });
 
