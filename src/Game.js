@@ -33,7 +33,11 @@ class Game {
   }
 
   start() {
-
+    const gameCards = this.createCards(prototypeQuestions);
+    const gameDeck = this.createDeck(gameCards);
+    this.setCurrentRound(gameDeck);
+    this.printMessage(gameDeck, this.currentRound);
+    this.printQuestion(this.currentRound);
   }
 }
 
